@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class kucuktenBuyuge {
+public class KucuktenBuyuge {
     public static void main(String[] args) {
         Scanner girdi = new Scanner(System.in);
         int a,b,c;

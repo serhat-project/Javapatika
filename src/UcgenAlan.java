@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ucgenAlan {
+public class UcgenAlan {
     public static void main(String[] args) {
 
         Scanner girdi = new Scanner(System.in);
