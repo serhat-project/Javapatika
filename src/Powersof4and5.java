@@ -6,10 +6,20 @@ public class Powersof4and5 {
         //Java döngüler ile girilen sayıya kadar olan 4 ve 5'in kuvvetlerini ekrana yazdıran programı yazıyoruz.
         System.out.println("Bir sayı giriniz: ");
         int num = scan.nextInt();
-        for (int i = 0; i <= num; i++) {
-            System.out.println("4 üzeri " + i + " = " + Math.pow(4, i));
-            System.out.println("5 üzeri " + i + " = " + Math.pow(5, i));
-            System.out.println(" ");
+        double x;
+        double y;
+        int i=0;
+        boolean flag= true;
+        while (flag){
+            x = Math.pow(4, i);
+            y= Math.pow(5, i);
+            if ((x<=num) | (y<=num)){
+                System.out.println(num +" 'a kadar 4 ve 5'ün kuvvetleri: " + x);
+                System.out.println(num +" 'a kadar 4 ve 5'ün kuvvetleri: " + y);
+            }else {
+                flag = false;
+            }
+            i++;
         }
     }
 }

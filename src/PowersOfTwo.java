@@ -5,9 +5,24 @@ public class PowersOfTwo {
         Scanner scan= new Scanner(System.in);
         //Java döngüler ile girilen sayıya kadar olan 2'nin kuvvetlerini ekrana yazdıran programı yazıyoruz.
         System.out.println("Bir sayı girin: ");
+        double x;
+        int i=0;
         int num= scan.nextInt();
-        for (int i = 0; i <=num ; i++) {
-            System.out.println("2 üzeri " + i + " = " + Math.pow(2, i) );
+
+        // ---Solution with For---
+//        for (int i = 1; i <=num ; i*=2) {
+//            System.out.println(i);
+
+        //---Solution with While---
+        boolean flag= true;
+        while (flag){
+            x = Math.pow(2, i);
+            i++;
+            if (x<=num){
+                System.out.println(x);
+            }else {
+                flag = false;
+            }
 
         }
     }
