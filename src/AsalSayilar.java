@@ -20,7 +20,7 @@ public class AsalSayilar {
 
             // Eğer asal ise ekrana yazdırıyoruz
             if(asalMi) {
-                System.out.println(i);
+                System.out.print(i + " ");
             }
         }
     }
