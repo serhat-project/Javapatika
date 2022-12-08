@@ -15,7 +15,5 @@ public class LeapYear {
             return "Not Leap Year";
         }
     }
-
-
 }
 
